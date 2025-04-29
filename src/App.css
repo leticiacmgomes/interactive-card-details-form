@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  --bg-mobile: url('./assets/bg-main-mobile.png');
+  --bg-desktop: url('./assets/bg-main-desktop.png');
+}
+
+
+.App {
+  background-image: var(--bg-mobile);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Space Grotesk', Sans-Serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+@media (min-width: 800px) {
+  .App {
+    background-image: var(--bg-desktop);
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .App{
+    gap: 10rem;
+  }
+}

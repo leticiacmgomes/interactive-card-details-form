@@ -1,0 +1,35 @@
+.form {
+  width: 350px;
+  
+  & form {
+    display: grid;
+    grid-template-areas:
+    "input-name input-name"
+    "input-card-number input-card-number"
+    "input-expiration-date input-cvc"
+    "button button";
+    row-gap: 1rem;
+    column-gap: 0.8rem;
+    justify-items: center;
+    
+    & .input-expiration-date {
+      grid-area: input-expiration-date;
+      display: grid;
+      grid-template-areas: 
+      "label-expiration-date label-expiration-date"
+      "input-month input-year";
+      column-gap: 0.5rem;
+      
+      & .label-expiration-date {
+        grid-area: label-expiration-date;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: hsl(278, 68%, 11%);
+      }
+    }
+    
+    & button {
+      grid-area: button;
+    }
+  }
+}

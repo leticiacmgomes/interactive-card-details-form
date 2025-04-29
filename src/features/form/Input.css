@@ -1,0 +1,63 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  
+  & label {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);
+  }
+  
+  & input {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    border: solid 1px hsl(270, 3%, 87%);
+    color: hsl(278, 68%, 11%);
+  }
+  
+  & input.invalid {
+    border: solid 1px hsl(0, 100%, 66%);
+  }
+  
+  & input:focus, input:hover {
+    outline: none;
+    border: solid 1px hsl(249, 99%, 64%);
+  }
+  
+  & input::placeholder {
+    color: hsl(270, 3%, 87%);
+  }
+  
+  & .error {
+    font-size: 11px;
+    color: hsl(0, 100%, 66%);
+  }
+}
+
+& .input-name {
+  grid-area: input-name;
+  width: 100%;
+}
+
+& .input-card-number {
+  grid-area: input-card-number;
+  width: 100%;
+}
+
+& .input-month {
+  grid-area: input-month;
+  width: 90px;
+}
+
+& .input-year {
+  grid-area: input-year;
+  width: 90px;
+}
+
+& .input-cvc {
+  grid-area: input-cvc;
+  width: 160px;
+}
