@@ -5,6 +5,9 @@
   --bg-desktop: url('./assets/bg-main-desktop.png');
 }
 
+body {
+  overflow: hidden;
+}
 
 .App {
   background-image: var(--bg-mobile);
